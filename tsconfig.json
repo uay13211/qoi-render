@@ -1,0 +1,29 @@
+{
+    "$schema": "https://json.schemastore.org/tsconfig",
+    "compilerOptions": {
+        "target": "ES6",
+        "lib": ["ESNext", "DOM"],
+        "module": "CommonJS",
+        "moduleResolution": "Node",
+
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+
+        "forceConsistentCasingInFileNames": true,
+        "strict": true,
+        "removeComments": true,
+
+        "declaration": true,
+        "sourceMap": true,
+        "inlineSources": true,
+        "declarationMap": true,
+
+        "rootDir": "./src",
+        "outDir": "./dist",
+
+        "isolatedModules": true,
+        "importsNotUsedAsValues": "preserve",
+        "skipLibCheck": true
+    },
+    "include": ["src"]
+}

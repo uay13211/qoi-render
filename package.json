@@ -1,0 +1,33 @@
+{
+    "name": "qoi",
+    "version": "1.0.0",
+    "description": "Render QOI Image",
+    "main": "index.js",
+    "scripts": {
+        "start": "vite",
+        "build": "vite build",
+        "check": "tsc --noEmit",
+        "build:lib": "tsc --project ./src/lib/tsconfig.json",
+        "decode": "ts-node src/script/decode.ts",
+        "encode": "ts-node src/script/encode.ts",
+        "gen:bin": "ts-node src/script/gen-bin.ts",
+        "start:prod": "serve dist"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@types/get-pixels": "^3.3.2",
+        "get-pixels": "^3.3.3",
+        "image-size": "^1.0.1",
+        "typescript": "^4.6.3"
+    },
+    "devDependencies": {
+        "@types/node": "^17.0.23",
+        "@typescript-eslint/eslint-plugin": "^5.19.0",
+        "@typescript-eslint/parser": "^5.19.0",
+        "eslint": "^8.13.0",
+        "ts-node": "^10.7.0",
+        "vite": "^2.9.5"
+    }
+}
